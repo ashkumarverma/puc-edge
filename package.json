@@ -1,0 +1,23 @@
+{
+  "name": "puc-edge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denashverma/puc-edge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denashverma/puc-edge/issues"
+  },
+  "homepage": "https://github.com/denashverma/puc-edge#readme"
+}
