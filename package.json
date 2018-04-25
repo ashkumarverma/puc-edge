@@ -17,7 +17,7 @@
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
-    "mongodb": "*",
+    "mongodb": "^3.0.7",
     "mongoose": "*",
     "nodemon": "^1.17.3",
     "passport": "*",
