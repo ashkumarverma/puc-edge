@@ -37,10 +37,10 @@
     <!-- RANDOM DEALS ================================================== -->
     {{> _random_deals}}
     <!-- RANDOM DEALS ================================================== -->
-    @Html.Partial("_TopStoresPartial")
-
+    {{!-- @Html.Partial("_TopStoresPartial") --}}
+    {{{body}}}
     <!-- TWO PART ====================================================== -->
-    <div class="index-deals firstpg white">
+    {{!-- <div class="index-deals firstpg white">
         <div class="container">
             <div class="row">
                 <!-- LEFT COLUMN ================================================== -->
@@ -50,22 +50,22 @@
                 @Html.Partial("_RightColumnPartial")
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- NEWSLETTER ================================================== 	-->
-    @Html.Partial("_NewsLetterPartial")
+    {{!-- @Html.Partial("_NewsLetterPartial") --}}
     <!-- OVERVIEW ================================================== 	-->
-    @*@Html.Partial("_OverviewPartial")*@
+    {{!-- @*@Html.Partial("_OverviewPartial")*@ --}}
     <!-- GALLERY ================================================== 	-->
-    @*@Html.Partial("_GalleryPartial")*@
+    {{!-- @*@Html.Partial("_GalleryPartial")*@ --}}
     <div class="clear"></div>
     <!-- ANY-TEXT ================================================== 	-->
-    @*@Html.Partial("_AnyTextPartial")*@
+    {{!-- @*@Html.Partial("_AnyTextPartial")*@ --}}
     <!-- CONTACT  ================================================== 	-->
-    @*@Html.Partial("_ContactPartial")*@
+    {{!-- @*@Html.Partial("_ContactPartial")*@ --}}
     <!-- Google Maps  ================================================== -->
-    @*@Html.Partial("_MapPartial")*@
+    {{!-- @*@Html.Partial("_MapPartial")*@ --}}
     <!-- CREDITS  ====================================================== -->
-    @Html.Partial("_CreditsPartial")
+    {{!-- @Html.Partial("_CreditsPartial") --}}
     <!-- FOOTER ================================================== 	-->
     {{> _footer }}
     <div class="modal" id="modal-couponcode">
