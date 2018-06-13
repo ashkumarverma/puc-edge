@@ -1,12 +1,11 @@
-﻿//$('.carousel').carousel({
-//    interval: 3000
-//})
-
-
-
-(function () {
+﻿(function () {
     'use strict';
     var PayUCouponApp = angular.module('PayUCouponApp', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'ngSanitize']);
+
+    PayUCouponApp.config(function($interpolateProvider) {
+        $interpolateProvider.startSymbol('{[{');
+        $interpolateProvider.endSymbol('}]}');
+      });
 
     //Search Box
     PayUCouponApp.controller('DemoCtrl', function ($timeout, $q, $log, $http) {
@@ -181,7 +180,7 @@
     PayUCouponApp.factory('OfferService', ['$http', function ($http) {
         var OfferService = {};
         OfferService.getOffers = function () {
-            return $http.get('/Offers/GetTopStoresOffers');
+            return $http.get('/Users/GetTopStoresOffers');
         };
         return OfferService;
 

@@ -24,17 +24,10 @@
                                 <li ng-repeat="r in offers">
                                     <div class="box row" style="text-align:center;">
                                         <div class="image imagewrapper-alt" style="display:inline-table;">
-                                            <a ng-href="~/store/{{r.BrandName}}"><img ng-src="{{r.ImageLink}}?r=@DateTime.Now" alt="{{r.BrandName}}" class="img-responsive"/></a>
-                                            @*<div class="container-link">
-                                                    <div class="link">
-                                                        <a href="#"> <i class="fa fa-share-alt fa-flip-horizontal"></i> </a>
-                                                        <a data-toggle="modal" href="#modal-couponcode" class="" ng-click="myFunc($event)"> <i class="fa fa-search-plus"></i></a>
-                                                    </div>
-                                                </div>*@
-                                            @*<a href="#" class="title-header caption">{{r.Title}}</a>*@
+                                            <a ng-href="~/store/{{r.BrandName}}"><img ng-src="{{r.ImageLink}}?r=@DateTime.Now" alt="{{r.BrandName}}" class="img-responsive"/></a>                                            
                                         </div>
                                         <div class="store-list-title">
-                                            <span>{{r.Title}}</span>
+                                            <span>{[{r.Title}]}</span>
                                         </div>
                                         <div class="padding10">
                                             <a ng-href="~/store/{{r.BrandName}}" class="store-brand"> See all {{r.BrandName}} Offers</a>
