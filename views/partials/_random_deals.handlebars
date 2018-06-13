@@ -1,0 +1,50 @@
+<div class="firstpage-deals white" style="padding-top:30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="block random wow fadeInDown">                    
+                    <!-- Responsive_01 -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-8013071304749138"
+                         data-ad-slot="1333100887"
+                         data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </section>
+                <section class="block random wow fadeInDown">
+                    <h3 class="header">Top Offers</h3>
+                    <div id="loading">
+                        <img id="loading-Image" src="css/megafolio/assets/loader.gif" alt="Loading..." />
+                    </div>
+                    <div id="DisplayRandomDeals" class="row hideClass">
+                        <div ng-controller="OfferController" ng-cloak>
+                            <ul id="lightSlider">
+                                <li ng-repeat="r in offers">
+                                    <div class="box row" style="text-align:center;">
+                                        <div class="image imagewrapper-alt" style="display:inline-table;">
+                                            <a ng-href="~/store/{{r.BrandName}}"><img ng-src="{{r.ImageLink}}?r=@DateTime.Now" alt="{{r.BrandName}}" class="img-responsive"/></a>                                            
+                                        </div>
+                                        <div class="store-list-title">
+                                            <span>{[{r.Title}]}</span>
+                                        </div>
+                                        <div class="padding10">
+                                            <a ng-href="~/store/{{r.BrandName}}" class="store-brand"> See all {{r.BrandName}} Offers</a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        {{!-- <span class="getcode"><a data-toggle="modal" href="#modal-couponcode" class="button-getcode btn btn-danger store-button" ng-click="offerPopUp(r.Id, $event)" style="background:#{{r.OfferType == 0 ? 'd9534f' : '27a9e3'}};">{{r.OfferType == 0 ? 'Grab Deal' : 'Get Coupon'}}</a></span> --}}
+                                    </div>
+                                    <div class="clear"></div>
+                                    <!-- end first coupon item -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end fourth coupon item -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
